@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Laborator 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block4"></div>
+    <div class="block block5"></div>
+
+    <div class="container">
+        <form class="modern-form">
+            <div class="form-section">
+                <h2>Date personale</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nume">Numele *</label>
+                        <input type="text" id="nume" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenume">Prenumele *</label>
+                        <input type="text" id="prenume" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data nașterii *</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sexul</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="sex" value="F">
+                                <span>F</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="sex" value="M">
+                                <span>M</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telefonul</label>
+                        <input type="tel" id="telefon">
+                    </div>
+                    <div class="form-group">
+                        <label for="raion">Raionul</label>
+                        <select id="raion">
+                            <option>Edineț</option>
+                            <option>Bălți</option>
+                            <option>Chișinău</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Studii</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="colegiu">
+                                <span>Colegiu</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="licenta">
+                                <span>Licență</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="masterat">
+                                <span>Masterat</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="suplimentar">Suplimentar</label>
+                        <textarea id="suplimentar" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>Date despre produsul ales</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="produs">Denumirea produs *</label>
+                        <input type="text" id="produs" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="producator">Producătorul *</label>
+                        <input type="text" id="producator" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantitate">Cantitatea de produse *</label>
+                        <input type="number" id="cantitate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="culoare">Culoarea *</label>
+                        <input type="color" id="culoare" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="marime">Mărimea *</label>
+                        <input type="text" id="marime" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>Date bancare</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Tipul cardului *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="card" value="visa" required>
+                                <span>Visa</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="card" value="mastercard">
+                                <span>MasterCard</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Numărul cardului *</label>
+                        <input type="text" id="card-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expira">Expiră *</label>
+                        <input type="date" id="expira" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="reset" class="btn-reset">Anulează</button>
+                <button type="submit" class="btn-submit">Trimite</button>
+            </div>
+        </form>
+        <ul class="custom-list">
+            <li>Primul element</li>
+            <li>Al doilea element</li>
+            <li>Al treilea element</li>
+        </ul>
+
+        <ol class="numbered-list">
+            <li>Element ordonat 1</li>
+            <li>Element ordonat 2</li>
+            <li>Element ordonat 3</li>
+        </ol>
+
+        <p class="special-paragraph">
+            Acesta este un paragraf special care demonstrează utilizarea pseudo-elementelor.
+            Conține mai multe linii de text pentru a demonstra efectul first-line.
+        </p>
+        <a href="https://www.example.com" class="external-link">Vizitează site-ul nostru partener</a>
+    </div>
+</body>
+</html>

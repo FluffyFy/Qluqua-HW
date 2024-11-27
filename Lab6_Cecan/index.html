@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        header, nav, article, section, aside, footer {
+            background-color: #90EE90;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Layout pentru Desktop */
+        @media screen and (min-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header header header"
+                    "nav main ads"
+                    "footer footer footer";
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            .main-content {
+                display: grid;
+                gap: 10px;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        /* Layout pentru Mobile */
+        @media screen and (max-width: 767px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "ads"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+
+        header { grid-area: header; }
+        nav { grid-area: nav; }
+        .main-content { grid-area: main; }
+        aside { grid-area: ads; }
+        footer { grid-area: footer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <nav>
+            <h2>Navigare</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section>
+                <article>
+                    <h2>Articol 1</h2>
+                    <p>Conținut articol 1</p>
+                </article>
+
+                <article>
+                    <h2>Articol 2</h2>
+                    <p>Conținut articol 2</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Galerie</h2>
+                <div class="gallery">
+                    <div class="gallery-item">Galerie 1</div>
+                    <div class="gallery-item">Galerie 2</div>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Reclame</h2>
+            <p>Spațiu pentru reclame</p>
+        </aside>
+
+        <footer>
+            <p>Footer - Informații de contact</p>
+        </footer>
+    </div>
+</body>
+</html>

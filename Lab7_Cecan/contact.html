@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Laborator 7</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            
+            <nav class="nav-menu">
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Acasă</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Produse</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-item">Categorie 1</a>
+                            <a href="#" class="dropdown-item">Categorie 2</a>
+                            <a href="#" class="dropdown-item">Categorie 3</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Servicii</a>
+                        <div class="dropdown">
+                            <a href="serviciu1.html" class="dropdown-item">Consultanță IT</a>
+                            <a href="serviciu2.html" class="dropdown-item">Dezvoltare Web</a>
+                            <a href="serviciu3.html" class="dropdown-item">Cloud Computing</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html" class="menu-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h1>Contact</h1>
+                    <div class="info-section">
+                        <h2>Informații Companie</h2>
+                        <p><strong>Nume Companie:</strong> Denumire SRL</p>
+                        <p><strong>Adresă:</strong> Strada Exemplu, Nr. 123, București</p>
+                        <p><strong>Program:</strong> Luni - Vineri: 09:00 - 18:00</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Contact Rapid</h2>
+                        <p><strong>Telefon:</strong> <a href="tel:+40123456789">+40 123 456 789</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Formular de Contact</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nume și Prenume:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subiect:</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mesaj:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Trimite Mesaj</button>
+                        </form>
+                    </div>
+
+                    <div class="map-section">
+                        <h2>Locație</h2>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91158.11019644265!2d26.0413864!3d44.4379225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1637764791234!5m2!1sro!2sro" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-container">
+                <a href="https://facebook.com" class="social-sprite facebook">
+                    <span class="social-text">Facebook</span>
+                </a>
+                <a href="https://twitter.com" class="social-sprite twitter">
+                    <span class="social-text">Twitter</span>
+                </a>
+                <a href="https://instagram.com" class="social-sprite instagram">
+                    <span class="social-text">Instagram</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

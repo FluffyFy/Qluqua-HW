@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Aceasta este o pagină web de laborator care demonstrează structurarea documentelor HTML." />
+    <meta name="keywords" content="HTML, laborator, web, programare, educație" />
+    <meta name="author" content="Alex" />
+    <link rel="shortcut icon" href="image/icon.png" />
+    <title>Laborator nr.2</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .bordered-image {
+            border: 2px solid black;
+        }
+        
+        .center-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .image-table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        
+        .image-table td {
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .child-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .photo-cell {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Metoda Folosind Flexbox</h3>
+    <div class="flex-container">
+        <img src="image/image2.webp" 
+             alt="Prima imagine" 
+             title="Imagine 1" 
+             width="200" 
+             height="150"
+             object-fit="cover"    
+             object-position="center"  />
+        <img src="image/image2.webp" 
+             alt="A doua imagine" 
+             title="Imagine 2" 
+             width="200" 
+             height="150">
+    </div>
+    <div class="center-container">
+        <img src="image/image2.webp" 
+             alt="A treia imagine" 
+             title="Imagine 3" 
+             width="300" 
+             height="150"
+             class="bordered-image">
+    </div>
+
+    <table>
+        <tr>
+            <th colspan="5">Date despre copiii colaboratorilor</th>
+        </tr>
+        <tr>
+            <th>Nume, prenume</th>
+            <th>Adresa fizică</th>
+            <th>Număr copii minori</th>
+            <th>Prenume copil și anul de naștere</th>
+            <th>Poza copil</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Ivanov Elena</td>
+            <td rowspan="2">Str. Codrilor 45, ap.56</td>
+            <td rowspan="2">2</td>
+            <td>Elena, 2006</td>
+            <td class="photo-cell">
+                <a href="elena.html">
+                    <img src="elena.jpg" alt="Elena" class="child-photo">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Valeriu, 2011</td>
+            <td class="photo-cell">
+                <a href="valeriu.html">
+                    <img src="valeriu.jpg" alt="Valeriu" class="child-photo">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">Mihailov Marta</td>
+            <td rowspan="3">Str. Puskin 10, ap.45</td>
+            <td rowspan="3">3</td>
+            <td>Ion, 2008</td>
+            <td class="photo-cell">
+                <a href="ion.html">
+                    <img src="ion.jpg" alt="Ion" class="child-photo">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Ecaterina, 2010</td>
+            <td class="photo-cell">
+                <a href="ecaterina.html">
+                    <img src="ecaterina.jpg" alt="Ecaterina" class="child-photo">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Valentin, 2011</td>
+            <td class="photo-cell">
+                <a href="valentin.html">
+                    <img src="valentin.jpg" alt="Valentin" class="child-photo">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Cliucnicov Magdalena</td>
+            <td>Str. Nucilor 34, ap. 22</td>
+            <td>1</td>
+            <td>Mariuta, 2012</td>
+            <td class="photo-cell">
+                <a href="mariuta.html">
+                    <img src="mariuta.jpg" alt="Mariuta" class="child-photo">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Total număr copii</td>
+            <td colspan="3">6</td>
+        </tr>
+    </table>
+
+    <h1>Harta Google</h1>
+<p>Aici aveţi o hartă Google:</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23092.31249194663!2d26.102620337231465!3d44.426767381230415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fbb1bc5e20f9%3A0x9bb62f2cd18d9d3f!2sPalatul%20Parlamentului!5e0!3m2!1sro!2sro!4v1609372243430!5m2!1sro!2sro"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+        <table >
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Date personale</legend>
+                        <label for="nume">*Numele:</label>
+                        <input type="text" id="nume" name="nume" pattern="[A-Za-z]+" required><br><br>
+    
+                        <label for="prenume">*Prenumele:</label>
+                        <input type="text" id="prenume" name="prenume" pattern="[A-Za-z]+" required><br><br>
+    
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"><br><br>
+    
+                        <label for="data_nasterii">*Data nasterii:</label>
+                        <input type="date" id="data_nasterii" name="data_nasterii" required><br><br>
+    
+                        <label>Sexul:</label>
+                        <input type="radio" name="sex" value="F"> F
+                        <input type="radio" name="sex" value="O"> O
+                        <input type="radio" name="sex" value="M"> M<br><br>
+    
+                        <label for="telefon">Telefonul:</label>
+                        <input type="tel" id="telefon" name="telefon"><br><br>
+    
+                        <label for="raion">Raionul:</label>
+                        <select id="raion" name="raion">
+                            <option value="Edinet">Edinet</option>
+                            <option value="Edinet">Chisinau</option>
+                            <option value="Edinet">Soroca</option>
+                            <option value="Edinet">Comrat</option>
+                        </select><br><br>
+    
+                        <label>Studii:</label><br>
+                        <input type="checkbox" name="studii" value="colegiu"> Colegiu<br>
+                        <input type="checkbox" name="studii" value="licenta"> Licență<br>
+                        <input type="checkbox" name="studii" value="masterat"> Masterat<br><br>
+    
+                        <label for="suplimentar">Suplimentar:</label><br>
+                        <textarea id="suplimentar" name="suplimentar" maxlength="1000"></textarea><br><br>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Date despre produsul ales</legend>
+                        <label for="denumire">*Denumirea produs:</label>
+                        <input type="text" id="denumire" name="denumire" pattern="[A-Za-z]+" required><br><br>
+    
+                        <label for="producator">*Producătorul:</label>
+                        <input type="text" id="producator" name="producator" pattern="[A-Za-z]+" required><br><br>
+    
+                        <label for="cantitate">*Cantitatea de produse:</label>
+                        <input type="number" id="cantitate" name="cantitate" required><br><br>
+    
+                        <label for="culoare">*Culoarea:</label>
+                        <input type="color" id="culoare" name="culoare" required><br><br>
+    
+                        <label for="marime">*Mărimea:</label>
+                        <input type="text" id="marime" name="marime" required><br><br>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Date bancare</legend>
+                        <label>*Tipul cardului:</label>
+                        <input type="radio" name="tip_card" value="Viza" required> Viza
+                        <input type="radio" name="tip_card" value="MasterCard"> MasterCard<br><br>
+    
+                        <label for="numar_card">*Numărul cardului:</label>
+                        <input type="text" id="numar_card" name="numar_card" required><br><br>
+    
+                        <label for="expira">*Expiră:</label>
+                        <input type="date" id="expira" name="expira" required><br><br>
+                        <button type="reset">Anuleaza</button>
+        <button type="submit">Trimite</button>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+<h2>Ascultă muzica</h2>
+<audio controls>
+    <source src="audio/audio.mp3" type="audio/mpeg">
+    <source src="Audio/audio.mp3.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2>Urmărește video</h2>
+<video controls width="600">
+    <source src="video/video.mp4" type="video/mp4">
+    <source src="Video/video.mp4.webm" type="video/webm">
+    Your browser does not support the video element.
+</video>
+    
+    
+ 
+</body>
+</html>

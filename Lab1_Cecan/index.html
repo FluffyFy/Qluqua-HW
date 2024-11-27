@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Aceasta este o pagină web de laborator care demonstrează structurarea documentelor HTML." />
+    <meta name="keywords" content="HTML, laborator, web, programare, educație" />
+    <meta name="author" content="Alex" />
+    <link rel="shortcut icon" href="image/icon.png" />
+    <title>Laborator nr.1</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#menu {
+    background-color: #f2f2f2;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu-item {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-item:hover {
+    color: #0066cc;
+}
+
+.chapter {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.top-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    text-decoration: none;
+    color: #666;
+}
+
+.external-links {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.external-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .main-header {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div id="sus">
+        <div id="menu">
+            <a href="#capitol1" class="menu-item">Capitolul 1</a>
+            <a href="#capitol2" class="menu-item">Capitolul 2</a>
+            <a href="#capitol3" class="menu-item">Capitolul 3</a>
+        </div>
+        </div>
+    <div class="chapter">
+        <h2 id="capitol1">Capitolul 1</h2>
+    
+    
+    <h2>1.1. Ce este HTML?</h2>
+    <p>HTML (HyperText Markup Language) este limbajul standard pentru crearea paginilor web.</p>
+    <p>Are un format ușor de înțeles și utilizat de către dezvoltatori.</p>
+    <p>Un exemplu de utilizare a tag-ului <mark>mark</mark> este pentru a evidenția textul important.<br>
+    "Creează o lume nouă!"<pre>Acesta este un exemplu de text preformatat.</pre></p>
+    
+    <h3>Liste numerotate</h3>
+    <ol>
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+        <li>Al patrulea element</li>
+    </ol>
+    
+    <ol type="a">
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+        <li>Al patrulea element</li>
+    </ol>
+    
+    <ol type="I" start="3">
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+        <li>Al patrulea element</li>
+    </ol>
+    
+    <p>Alte tipuri de numerotări pot include litere mari (A, B, C) sau cifre romane inversate.</p>
+
+    <h3>Liste marcate</h3>
+    <ul>
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+        <li>Al patrulea element</li>
+    </ul>
+    
+    <ul type="disc">
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+        <li>Al patrulea element</li>
+    </ul>
+    
+    <ul type="circle">
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+        <li>Al patrulea element</li>
+    </ul>
+
+    <h3>Listă mixtă</h3>
+    <ol>
+        <li>Capitol 1
+            <ul>
+                <li>Subcapitol 1.1</li>
+                <li>Subcapitol 1.2</li>
+            </ul>
+        </li>
+        <li>Capitol 2
+            <ol>
+                <li>Subcapitol 2.1</li>
+                <li>Subcapitol 2.2</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h3>Listă de descriere</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Un limbaj de marcare utilizat pentru a crea pagini web</dd>
+        
+        <dt>CSS</dt>
+        <dd>O tehnologie folosită pentru a stiliza documentele HTML</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Un limbaj de programare care adaugă interactivitate paginilor web</dd>
+    </dl>
+
+   
+
+    <h2>1.2. Structura HTML</h2>
+    <p>Structura de bază a unui document HTML include elemente precum <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> și <code>&lt;body&gt;</code>.</p>
+    <p>Fiecare element are rolul său bine definit.</p>
+    <p>De exemplu, <abbr title="Hypertext Markup Language">HTML</abbr> se folosește pentru a structura conținutul.</p>
+    
+   
+
+    <a href="#sus" class="top-link">↑ Sus</a>
+</div>
+    
+
+    <div class="chapter">
+    <h2 id="capitol2">Capitolul 2</h2>
+
+    <div class="main-header">Repartizarea orelor pentru acest semestru</div>
+
+<table>
+    <tr>
+        <th rowspan="2">Semestru</th>
+        <th colspan="4">Total ore</th>
+        <th rowspan="2">Evaluarea</th>
+        <th rowspan="2">Nr. de credite</th>
+    </tr>
+    <tr>
+        <th>Total ore semestru</th>
+        <th colspan="3">Inclusiv</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Curs</th>
+        <th>Laborator</th>
+        <th>LI</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>I</td>
+        <td>150</td>
+        <td>30</td>
+        <td>45</td>
+        <td>75</td>
+        <td>Examen</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>II</td>
+        <td>90</td>
+        <td>30</td>
+        <td>30</td>
+        <td>30</td>
+        <td>Examen</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Total ore</td>
+        <td colspan="4">240</td>
+        <td>Total credite</td>
+        <td>9</td>
+    </tr>
+</table>
+
+<a href="#sus" class="top-link">↑ Sus</a>
+</div>
+  
+
+    <div class="chapter">
+        <h2 id="capitol3">Capitolul 3</h2>
+
+    <h2>3.1. Importanța HTML</h2>
+    <p>HTML este fundamentul pe care se construiesc paginile web.</p>
+    <p>Fără HTML, internetul nu ar fi ceea ce este astăzi.</p>
+    <p>Este un limbaj ușor de învățat, dar puternic în utilizare.</p>
+
+    <h2>3.2. Viitorul HTML</h2>
+    <p>Pe măsură ce tehnologia evoluează, și HTML se adaptează.</p>
+    <p>Noul standard HTML5 aduce multe îmbunătățiri.</p>
+    <p>Este important să ne actualizăm cunoștințele pentru a rămâne relevanți în domeniu.</p>
+    <a href="#sus" class="top-link">↑ Sus</a>
+</div>
+
+<div class="external-links">
+    <a href="https://www.google.com" target="_blank" class="external-link">Google</a>
+    <a href="https://www.facebook.com" target="_blank" class="external-link">Facebook</a>
+    <a href="https://www.github.com" target="_blank" class="external-link">GitHub</a>
+</div>
+    
+</body>
+</html>
